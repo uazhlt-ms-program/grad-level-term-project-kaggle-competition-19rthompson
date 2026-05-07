@@ -50,7 +50,6 @@ def union(ngrams = (1,2)):
 
 def classify(my_args):
     df = pd.read_csv("data/train.csv")
-    df["LABEL"] = df["LABEL"].astype(int)
 
     df["TEXT"] = df["TEXT"].fillna("")
     df["LABEL"] = df["LABEL"].astype(int)
